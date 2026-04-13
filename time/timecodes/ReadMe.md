@@ -2,7 +2,7 @@ To timecode we use a tentacle sync E that jam syncs the Vicon Lock.
 
 ## Live recordings
 ### Vicon
-To set that up read [[Genlocking - Timecoding - Vicon]].
+To set that up read [[Genlocking - Timecoding - Vicon]] (not relevant for this repo so not linked).
 ### iPhone
 The iPhone can read from the same tentacle sync E:
 1. Go to Settings in LLF
@@ -27,7 +27,7 @@ To accomplish this we need to set up a few things:
 	1. Recording Clock Source: Tick
 	2. Record Timecode: True
 	3. Timecode Bone Method: All
-![[TimedDataMonitor.png]]
+![TimedDataMonitor](TimedDataMonitor.png)
 *Why do we put the evaluation mode on Timecode and the ClockSource on Tick?*
 **Clock Source: Tick**  
 Use **Tick** so Take Recorder captures the final evaluated avatar each engine frame. This avoids delays caused by waiting for individual source timestamps after Unreal merges and solves multiple streams.
